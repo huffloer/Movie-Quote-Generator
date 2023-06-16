@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    margin:0;
+    background-image: url(street_cars_fog_rain_city_2560x1520.jpg) ;
+    background-repeat: no-repeat;
+    background-origin: inherit;
+    background-size:auto;
+    background-position-y: -500px;
+    background-position-x: center;
+    /* background-color: #49241f; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+#container {
+    margin: auto;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+
+}
+
+
+#generatorPart {
+    width: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+
+#list{
+    color: rgb(182, 182, 182);
+    width: 100%;
+    height: 85%;
+    padding: 1em 2em 1em 2em;
+    overflow:auto;   
+}
+
+.listElement {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    height: 3rem;
+    width: 3rem;
+    background: none;
+    margin: 0;
+}
+
+hr {
+    border-color: grey;
+    border-top: grey;
+    border-left: grey;
+    border-width: 1px;
+}
+
+.quote {
+    color: white;
+    font-size: 1.2em;
+}
+
+.movie {
+    color: rgb(182, 182, 182);
+}
+
+.noadded{
+    color: rgb(182, 182, 182);
+}
+
+
+#text {
+    font-size: 4rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    
+}
+
+#title {
+    text-align: center;
+    width: 100%;
+}
+
+#author {
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    color: white;
+    /* display: none; */
+}
+
+
+
+
+#buttons {
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 3.7em;
+    gap: 3em;
+    position: relative;
+    /* background: none;
+    border: none;
+    outline: none;
+    cursor: pointer; */
+    
+}
+
+#buttons1{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 3.7em;
+}
+
+#buttons2{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+    height: 3.7em;
+} 
+
+button {
+    margin: auto;
+    border:none;
+}
+
+#generate {
+    padding: 1rem;
+    color: white;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 15em;
+    height: 3.7em;
+    transition: background-color 0.15s ease;
+    
+}
+
+#reload {
+    width: 3.7em;
+    background-color:rgba(0, 0, 0, 0.76) ;
+    border-radius: 8px;
+    padding: auto;
+    height: 3.7em;
+    transition: background-color 0.15s ease;
+}
+
+#fav {
+    width: 3.7em;
+    height: 3.7em;
+    background: none;
+}
+
+#library {
+    width: 3.7em;
+    height: 3.7em;
+    background: none;
+}
+
+#generate:hover {
+    background-color: black;
+}
+
+#reload:hover{
+    background-color: black;
+}
+
+@media (min-width: 1040px) {
+    #generatorPart{
+        width: 40vw;
+    }
+    
+}
